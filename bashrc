@@ -11,7 +11,7 @@ HISTCONTROL=ignoredups
 
 #Sets bash history log time format and ignores ls and history commands
 HISTTIMEFORMAT="%m/%d/%y %T: "
-HISTIGNORE="ls:history"
+HISTIGNORE="ls:history:clear"
 
 # for setting history length see HISTSIZE and HISTFILESIZE in bash(1)
 HISTSIZE=100000
