@@ -84,5 +84,3 @@ if ! shopt -oq posix; then
   fi
 fi
 
-alias chester="ssh tyler.boire@108.11.193.189 -p 62024"
-alias chester-nessus="ssh -L 8835:localhost:6969 tyler.boire@108.11.193.189 -p 62024"
