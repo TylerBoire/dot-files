@@ -7,7 +7,7 @@ esac
 PROMPT_COMMAND='history -n;history -a'
 
 # don't put lines starting with space in the history.
-HISTCONTROL=ignoredup
+HISTCONTROL=ignoredups
 
 #Sets bash history log time format and ignores ls and history commands
 HISTTIMEFORMAT="%m/%d/%y %T: "
