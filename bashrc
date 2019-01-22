@@ -5,13 +5,10 @@ case $- in
 esac
 
 PROMPT_COMMAND='history -n;history -a'
-
 # don't put lines starting with space in the history.
-HISTCONTROL=ignoredups
 
 #Sets bash history log time format and ignores ls and history commands
 HISTTIMEFORMAT="%m/%d/%y %T: "
-HISTIGNORE="ls:history:clear"
 
 # for setting history length see HISTSIZE and HISTFILESIZE in bash(1)
 HISTSIZE=100000
@@ -68,9 +65,12 @@ esac
 if [ -x /usr/bin/dircolors ]; then
     test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
     alias ls='ls --color=auto'
+    alias dir='dir --color=auto'
+    alias vdir='vdir --color=auto'
     alias grep='grep --color=auto'
     alias fgrep='fgrep --color=auto'
     alias egrep='egrep --color=auto'
+    alias ll='ls -l'
 fi
 
 # enable programmable completion features (you don't need to enable
